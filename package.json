@@ -1,0 +1,25 @@
+{
+    "name": "anthracite-feedback-service",
+    "version": "0.5.0",
+    "module": "src/index.js",
+    "devDependencies": {
+        "@elysiajs/cors": "^1.1.0",
+        "@elysiajs/swagger": "^1.1.0",
+        "@eslint/js": "^9.8.0",
+        "bun-types": "^1.1.21",
+        "drizzle-kit": "^0.23.0",
+        "drizzle-orm": "^0.32.1",
+        "elysia": "^1.1.4",
+        "elysia-ip": "^1.0.7",
+        "eslint": "^9.8.0",
+        "postgres": "^3.4.4"
+    },
+    "peerDependencies": {
+        "typescript": "^5.5.4"
+    },
+    "scripts": {
+        "start": "bun run --watch src/index.ts",
+        "migrate": "bun run drizzle-kit generate"
+    },
+    "type": "module"
+}
